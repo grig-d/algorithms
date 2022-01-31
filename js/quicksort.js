@@ -1,4 +1,4 @@
-function Quicksort(inputArray) {
+export default function Quicksort(inputArray) {
   if (inputArray.length <= 1) {
     return inputArray;
   } else {
@@ -17,7 +17,3 @@ function Quicksort(inputArray) {
     return [...Quicksort(leftArray), pivot, ...Quicksort(rightArray)];
   }
 }
-
-const arr = [2, 27, 14, 52, 31, 96, 73, 47, 22, 6];
-console.log(arr);
-console.log(Quicksort(arr));
